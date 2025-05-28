@@ -17,7 +17,7 @@ const Library = () => {
       <div className="folders">
         {artistsData.slice(0,2).map((item, index ) => {
          return (
-          <Link to={`/artist/${item.id}`} key={index} className="artist-folder folder">
+          <Link to={`/ronen-music-app/artist/${item.id}`} key={index} className="artist-folder folder">
           <img src={item.image} alt="" />
           <span className= 'playlistName'>{item.name}</span>
         </Link>
@@ -29,7 +29,7 @@ const Library = () => {
         </div>
         {albumsData.slice(3).map((item, index) => {
           return (
-          <Link to={`/album/${item.id}`} key={index} className=" folder">
+          <Link to={`/ronen-music-app/album/${item.id}`} key={index} className=" folder">
           <img src={item.image} alt="" />
           <span className= 'playlistName'>{item.name}</span>
         </Link>
