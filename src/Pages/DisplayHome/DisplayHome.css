@@ -1,0 +1,110 @@
+.display-home {
+        height: 100%;
+        padding-bottom: 120px;
+        overflow: auto;
+}
+
+
+.home-BgGradient {
+    background-color: #f119a5;   
+    background-image: linear-gradient(#0007, var(--primary-color));
+    height: 332px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    transition:background 1s 1s ease;
+    z-index: -1;
+}
+.home-BgGradientSoft {
+    background: var(--primary-color);
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    z-index: -2;
+}
+
+
+.categories {
+    background-color: transparent;
+    display: flex;
+    padding: 15px;
+    padding-left: 30px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    gap: 10px;
+}
+.category {
+    background-color:#d5b8b857;
+    padding: 8px 14px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.category-active {
+    background-color: #fff;
+    color:black;
+}
+
+.songs-box {
+    padding: 30px ;
+}
+.songs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px;
+}
+.albums-box {
+    padding: 15px;
+}
+.albums-box h1 {
+    margin: 0 0 20px 10px ;
+    font-size: 29px;
+    color: #fff;
+    font-weight: 600;
+}
+.albums {
+    display: flex;
+    flex-direction: row;
+    margin-right:10px;
+    gap: 10px;
+    overflow:auto;
+}
+
+.artists-box {
+    padding: 15px;
+}
+.artists-box h1 {
+    margin: 0 0 20px 10px ;
+    font-size: 29px;
+    color: #fff;
+    font-weight: 600;
+}
+.artists {
+    display: flex;
+    flex-direction: row;
+    margin-right:10px;
+    gap: 10px;
+    overflow:auto;
+}
+
+
+@media screen and (max-width: 650px) {
+    .songs-box{
+        padding: 20px;
+    }
+    .songs {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+    .albums-box, .artists-box {
+        padding: 7px;
+    }
+    .albums-box h1 {
+        font-size: 25px;
+    }
+    .artists-box h1 {
+        font-size: 25px;
+    }
+}

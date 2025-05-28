@@ -1,0 +1,13 @@
+.content {
+  display: flex;
+  gap: 7px;
+  padding: 0px 7px;
+  width: 100vw;
+}
+
+
+@media screen and (max-width: 650px) {
+  .content {
+    padding: 0;
+  }
+}

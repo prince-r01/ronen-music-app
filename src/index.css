@@ -1,0 +1,27 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color:#121212;
+  --theme-color: #259c25; 
+}
+
+#root {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  width: 100%;
+  height: 100vh;
+  overflow-y: hidden;
+  background: black;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+

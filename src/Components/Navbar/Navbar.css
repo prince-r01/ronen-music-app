@@ -1,0 +1,103 @@
+nav {
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px ;
+    color: #ffffff;
+}
+nav .logo {
+    flex:1;
+}
+nav .logo-name {
+    background: #1f1f1f;
+    padding: 12px 17px;
+    letter-spacing: 1px;
+    border-radius: 35px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+}
+nav .nav-middle {
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.nav-middle .home-icon {
+    cursor:pointer;
+    background-color: #1f1f1f;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+}
+.home-icon:hover {
+    background-color: #3c3c3c;
+}
+.active svg {
+    fill: #ffffff;
+}
+.nav-middle .search-bar {
+    display: flex;
+    width: 55%;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    background-color: #1f1f1f;
+    border-radius: 30px;
+    padding:10px 13px;
+}
+
+.nav-middle .folder-icon {
+    display: grid;
+    place-content: center;
+}
+.nav-middle input {
+    color: #fff;
+    font-size :15px ;
+    font-weight: 600;
+    width: 80%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding: 2px 7px;
+    border-right: 2px solid #887f7f;
+}
+.nav-middle svg {
+    cursor: pointer;
+}
+nav .nav-end {
+    flex:1;
+    display: flex;
+    justify-content: flex-end;
+}
+nav .profile {
+    height: 40px;
+    background-color: #1f1f1f;
+    width: 40px;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+}
+
+.profile img {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
+}
+
+
+@media screen and (max-width: 650px)  {
+    nav {
+        height: 8vh;
+    }
+    nav .nav-middle {
+        display: none;
+    }
+   
+}

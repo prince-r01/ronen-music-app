@@ -1,0 +1,45 @@
+.library-page {
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.library-page .library-icon {
+    position: relative;
+    color: #ffff;
+    display: flex;
+    font-size: 20px;
+    font-weight: 600;
+    align-items: center;
+    gap: 20px;
+}
+
+.library-page .plus-icon {
+    cursor: pointer;
+    position: absolute;
+    height: 18px;
+    right: 10px;
+}
+
+.library-page .folders {
+    display: grid ;
+    padding: 20px 0px;
+    grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+}
+
+.library-page .folder {
+    display: flex;
+    flex-direction: column;
+}
+
+.library-page .folder img {
+    height: 100px;
+    width: 100px;
+}
+
+.library-page .folder .playlistName {
+    text-wrap: wrap;
+    text-align: center;
+}
+

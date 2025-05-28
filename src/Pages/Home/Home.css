@@ -1,0 +1,17 @@
+.home {
+    height: 80vh;
+    flex:1;
+    overflow: auto;
+    border-radius: 10px;
+    position:relative;
+    background-color: var(--primary-color);
+    z-index: 0;
+}
+
+
+@media screen and (max-width: 650px) {
+    .home {
+        height: 68vh;
+        border-radius: 5px;
+    }
+}

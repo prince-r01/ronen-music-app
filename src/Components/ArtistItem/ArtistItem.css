@@ -1,0 +1,58 @@
+.artist-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    color: #fff;
+    background: transparent;
+    border-radius: 50%;
+    cursor:pointer;
+    text-decoration: none;
+}
+
+.artist-item:hover .album-cover {
+    background: #ffffff26;
+    transition: background 300ms ease-in;
+}
+
+.artist-item .album-cover {
+    padding: 10px;
+    height: 212px;
+    width: 212px; 
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.artist-item .album-name {
+    text-align: center;
+    width: 200px;
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.artist-item .album-desc {
+    text-align: center;
+    width : 200px;
+    font-size: 13px;
+    font-weight: 300;
+    color: #c0c5cb;
+}
+
+.artist-item:hover .hoverableplay-icon{
+    top:145px;
+    opacity: 1;
+}
+
+
+@media screen and (max-width: 650px) {
+    .artist-item {
+        width: 220px;
+    }
+    .artist-item .album-cover {
+        width: 200px;
+        height: 200px;
+    }
+    
+}
