@@ -10,7 +10,7 @@ const ArtistItem = ({image,name,desc,id}) => {
   }
    return (
     <>
-      <Link to={`/artist/${id}`} onMouseEnter={handleBg} className='artist-item'>
+      <Link to={`/ronen-music-app/artist/${id}`} onMouseEnter={handleBg} className='artist-item'>
         <div className="hoverableplay-icon">
           <img src={assets.play_icon} alt="" />
         </div>

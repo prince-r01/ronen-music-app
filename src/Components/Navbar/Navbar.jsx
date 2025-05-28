@@ -20,7 +20,7 @@ const Navbar = () => {
         <span className="logo-name">Ronen</span>
       </div>
       <div className="nav-middle">
-        <Link to={'/'}
+        <Link to={'/ronen-music-app'}
           className={`home-icon ${active === 'home' ? "active" : ""}`}
           onClick={() => setActive("home")}
         >
@@ -72,7 +72,7 @@ const Navbar = () => {
             id="search"
             placeholder="What do you want to play?"
           />
-          <Link to={`/search`}
+          <Link to={`/ronen-music-app/search`}
             className={`folder-icon ${active === 'search-folders' ? "active" : ""}`}
             onClick={() => {
               setActive("search-folders")}

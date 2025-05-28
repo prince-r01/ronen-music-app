@@ -12,11 +12,11 @@ const Home = () => {
   return (
     <div className='home'>
     <Routes>
-          <Route path='/' element={<DisplayHome />} />
-          <Route path='/album/:id' element= {<DisplayAlbum/>}/>
-          <Route path='/artist/:id' element= {<DisplayAlbum/>}/>
-          <Route path='/search' element= {<Search/>}></Route>
-          <Route path='/library' element= {<LibraryPage/>}></Route>
+          <Route path='/ronen-music-app' element={<DisplayHome />} />
+          <Route path='/ronen-music-app/album/:id' element= {<DisplayAlbum/>}/>
+          <Route path='/ronen-music-app/artist/:id' element= {<DisplayAlbum/>}/>
+          <Route path='/ronen-music-app/search' element= {<Search/>}></Route>
+          <Route path='/ronen-music-app/library' element= {<LibraryPage/>}></Route>
     </Routes>
     </div>
   )

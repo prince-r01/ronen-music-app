@@ -6,20 +6,30 @@ import ArtistItem from '../../Components/ArtistItem/ArtistItem'
 import SongItem from '../../Components/SongItem/SongItem'
 import { PlayerContext } from '../../context/PlayerContext'
 import { useLocation } from 'react-router-dom'
+import Loader from '../../Components/Loader/Loader'
 
 const DisplayHome = () => {
+    const [isLoading,setIsLoading] = useState(true);
     const location = useLocation();
-    const isHome = location.pathname.includes("album");
+    const isAlbum = location.pathname.includes("album");
     const {displayRef,setCurrAlbum} = useContext(PlayerContext); 
     const [activeTab,setActiveTab] = useState('all')
 
     useEffect(() => {
-      if(!isHome) {
+      if(!isAlbum) {
         setCurrAlbum(songsData)
       }
-    })
+    },[location])
+
+    useEffect(() => {
+       setTimeout(() => {
+        setIsLoading(false)
+      },1000)
+    },[])
+
   return (
-    <div className='display-home'>
+    <>
+    {isLoading ? (<Loader/>) : (<div className='display-home'>
         <div ref={displayRef} className="home-BgGradient"></div> 
         <div className="home-BgGradientSoft"></div>
         <div className="categories">
@@ -51,8 +61,10 @@ const DisplayHome = () => {
         </div>
       </div>}
        
-    </div>
-  )
+    </div>) }
+    </>  
+  ) 
+  
 }
 
 export default DisplayHome

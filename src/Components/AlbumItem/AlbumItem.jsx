@@ -10,7 +10,7 @@ const AlbumItem = ({image,name,desc,id}) => {
   }
    return (
     <>
-      <Link to={`/album/${id}`} onMouseEnter={handleBg} className='album-item'>
+      <Link to={`/ronen-music-app/album/${id}`} onMouseEnter={handleBg} className='album-item'>
         <div className="hoverableplay-icon">
           <img src={assets.play_icon} alt="" />
         </div>

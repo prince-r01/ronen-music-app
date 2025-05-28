@@ -16,7 +16,7 @@ const NavigationBar = () => {
   return (
     <div className="navigation-bar">
       <Link
-        to={"/"}
+        to={"/ronen-music-app"}
         className={`navigation-home ${
           navActive === "home" ? "nav-active" : ""
         }`}
@@ -41,7 +41,7 @@ const NavigationBar = () => {
         Home
       </Link>
       <Link
-        to={"/search"}
+        to={"/ronen-music-app/search"}
         className={`navigation-search ${
           navActive === "search" ? "nav-activeStroke" : ""
         }`}
@@ -75,7 +75,7 @@ const NavigationBar = () => {
         </svg>
         Search
       </Link>
-      <Link to={"/library"}  className={`navigation-library ${
+      <Link to={"/ronen-music-app/library"}  className={`navigation-library ${
           navActive === "library" ? "nav-active" : ""
         }`}
         onClick={() => {
