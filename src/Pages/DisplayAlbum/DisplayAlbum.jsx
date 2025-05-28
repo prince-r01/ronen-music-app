@@ -30,7 +30,7 @@ const DisplayAlbum = () => {
       setCurrAlbum(songsData);
     }
 
-  },[])
+  },[id])
 
   return (
     <div className="display-album">
