@@ -2,7 +2,6 @@ import bell_icon from "./bell.png";
 import home_icon from "./home.png";
 import like_icon from "./like.png";
 import loop_icon from "./loop.png";
-import mic_icon from "./mic.png";
 import next_icon from "./next.png";
 import play_icon from "./play.png";
 import pause_icon from "./pause.png";
@@ -10,19 +9,16 @@ import plays_icon from "./plays.png";
 import prev_icon from "./prev.png";
 import search_icon from "./search.png";
 import shuffle_icon from "./shuffle.png";
-import speaker_icon from "./speaker.png";
 import stack_icon from "./stack.png";
-import zoom_icon from "./zoom.png";
 import mute_icon from "./mute_icon.png"
 import plus_icon from "./plus.png";
 import arrow_icon from "./arrow.png";
 import mini_player_icon from "./mini-player.png";
 import queue_icon from "./queue.png";
 import volume_icon from "./volume.png";
-import arrow_right from "./right_arrow.png";
-import arrow_left from "./left_arrow.png";
 import clock_icon from "./clock_icon.png";
 import folder_icon from "./folder_icon.png";
+import ronen_logo from "./ronen_logo.jpg"
 import img1 from "./img1.jpg";
 import img2 from "./img2.jpg";
 import img3 from "./img3.jpg";
@@ -50,7 +46,6 @@ import album8 from "./album8.jpg";
 import artist1 from "./artist1.jpeg";
 import artist2 from "./artist2.jpeg";
 import artist3 from "./artist3.jpg"
-import profile_image from "./profile_image.jpg";
 import liked_cover from "./liked_cover.jpeg";
 import song1 from "./song1.mp3";
 import song2 from "./song2.mp3";
@@ -71,20 +66,18 @@ export const assets = {
   b_img3,
   b_img4,
   b_img5,
+  ronen_logo,
   bell_icon,
   home_icon,
   like_icon,
   loop_icon,
-  mic_icon,
   next_icon,
   play_icon,
   plays_icon,
   prev_icon,
   search_icon,
   shuffle_icon,
-  speaker_icon,
   stack_icon,
-  zoom_icon,
   plus_icon,
   arrow_icon,
   mini_player_icon,
@@ -93,12 +86,9 @@ export const assets = {
   queue_icon,
   pause_icon,
   folder_icon,
-  arrow_left,
-  arrow_right,
   clock_icon,
   music_note,
   liked_cover,
-  profile_image,
   playWaveSvg,
 };
 
