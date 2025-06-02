@@ -17,7 +17,9 @@ const Navbar = () => {
   return (
     <nav>
       <div className="logo">
-        <img src={assets.ronen_logo} alt="logo" className="logo-name" />
+       
+        <img src={assets.ronen_logo} alt="logo" className="logo-name" /> 
+        RONEN
       </div>
       <div className="nav-middle">
         <Link to={'/ronen-music-app'}
@@ -112,7 +114,7 @@ const Navbar = () => {
       </div>
       <div className="nav-end">
         <div className="profile">
-          <span>Pr</span>
+          <span>P</span>
         </div>
       </div>
     </nav>

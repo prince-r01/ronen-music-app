@@ -18,7 +18,7 @@ import queue_icon from "./queue.png";
 import volume_icon from "./volume.png";
 import clock_icon from "./clock_icon.png";
 import folder_icon from "./folder_icon.png";
-import ronen_logo from "./ronen_logo.jpg"
+import ronen_logo from "./ronen_logo2.jpg"
 import img1 from "./img1.jpg";
 import img2 from "./img2.jpg";
 import img3 from "./img3.jpg";

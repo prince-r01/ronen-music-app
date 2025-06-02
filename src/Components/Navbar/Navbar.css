@@ -10,10 +10,14 @@ nav {
 nav .logo {
     flex:1;
     display: flex;
+    gap: 3px;
     align-items: center;
+    font-size:18px;
+    font-family: 'Montserrat' , sans-serif;
+    font-weight: 600;
 }
 nav .logo-name {
-    height: 30px;
+    height: 32px;
 
 }
 nav .nav-middle {
